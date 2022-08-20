@@ -26,8 +26,9 @@ componentDidMount() {
     return (
       <div className="App">
       <input className='search-box' type='search' plaeholder='search monsters' onChange={(event) => {
+        const searchString = event.target.value.toLocaleLowerCase();
         const filteredMonsters = this.state.monsters.filter((monster) => {
-          return monster.name.includes(event.target.value);
+          return monster.name.toLocaleLowerCase().includes(searchString);
         });
 
         this.setState(() => {
