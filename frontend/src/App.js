@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './App.css';
+import CardList from './components/CardList';
 
 class App extends Component {
   constructor() {
@@ -52,6 +53,7 @@ onSearchChange = (event) => {
             </div>
           );
         })}
+        <CardList />
       </div>
     );
   }
