@@ -1,6 +1,8 @@
 import { Component } from 'react';
-import './App.css';
+
+import SearchBox from './components/search-box/search-box.component';
 import CardList from './components/CardList';
+import './App.css';
 
 class App extends Component {
   constructor() {
@@ -40,11 +42,10 @@ onSearchChange = (event) => {
     });
     return (
       <div className="App">
-      <input 
-      className='search-box' 
-      type='search' 
-      plaeholder='search monsters' 
-      onChange={ onSearchChange }/>
+        <SearchBox  
+        className='search-box' 
+        onChangeHandler={onSearchChange} 
+        />
         <CardList monsters={filteredMonsters}/>
       </div>
     );
