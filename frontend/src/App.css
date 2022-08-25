@@ -24,3 +24,11 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.app-title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 76px;
+  color: #0ccac4;
+  font-family: 'Bigelow Rules';
+}
